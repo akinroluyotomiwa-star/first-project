@@ -3,87 +3,49 @@
 public class Program //class
 {
     //Introduction to c#
-    //First c# Project(Hello world
-    //Syntax
-    //Ouput and comment
-    //Data types and variables
-    //Methods contains statement
+   //Operators are symbols or keywords that tells a compiler to perform a specific operation on variables , values or object
+
     private static void Main(string[] args) // entry point
     {
-        Console.WriteLine("hello tomiwa");
-        Console.WriteLine("/////////////////////");
-        Hello();
-        Console.WriteLine("-------------------");
-        hello();
-        Console.WriteLine("///////////////////////");
-        Tomiwa();
-        Console.WriteLine("---------------------");
+        //Arithmetic operators 
 
-        //create an object from the players class
-        Players players = new Players();
-        //assigning values directly to public fields
-        players.name = "Vini Junior";
-        players.age = 26;
-        players.month = "october";
-        //call the method to print the details
-        players.introducePlayer();
-   }
+        int a = 32; int b = 8; 
+        Console.WriteLine(a + b); // Addition 40
+        Console.WriteLine(a - b); // Subtraction 24
+        Console.WriteLine(a / b); // division 4
+        Console.WriteLine(a % b); //modulus or remaider 0
+        Console.WriteLine(a * b); //Multiplication 256
 
+        //Assignment Operator
+        int f = 6;
+        f += 3; // same thing as f = f + 3
+        f -= 3;// same thing as f = f - 3
+        f *= 5; // same thing as f = f * 3
+        f /= 3; // same thing as f = f / 3
+        f %= 3;//same thing as f = f % 3
 
-    // A single line comment
-    //Console.WriteLine -> print with a new line
-    //Console.Write ->print without a new line
-    /* This is a multi-line comment   */
-     public static void Hello() //Methods contains statement
-    {
-        Console.Write("say Hello"); // output say HelloSAY HELLO
-        Console.WriteLine("SAY HELLO");
-        // output say HelloSAY HELLO
-    }
-    public static void hello()
-    {
-        //Console.WriteLine("say hello");
-        Console.WriteLine(12 + 23); //      Output 35
-        Console.WriteLine("12" + "23"); // output 1223
-    }
+        //Comparison Operatior
+        int t = 6; int n = 10;
+        Console.WriteLine(t == n); //Equal false
+        Console.WriteLine(t != n); // not equal true
+        Console.WriteLine(t > n);// greater than false
+        Console.WriteLine(t < n); // less than true
+        Console.WriteLine(t >= n);// greater than or equal to false
+        Console.WriteLine(t <= n); // less than or equal to true
 
-    //Data Types and Variables
-    //A variable stores data
-    //A data type tells c# what kind of data a variable hold
-    //Common Data Types String(Text), Int(Whole Numbers), Double(Decimal Numbers), Bool(true/false value)
+        //Logical Operator
+        bool p = true, q = false;
+        Console.WriteLine(p && q);// AND FALSE
+        Console.WriteLine(p || q); // OR TRUE
+        Console.WriteLine(!p); //Not false
 
-    // String name = "Tomiwa";
-    //Int age = 13
-    //Double averageAge = 6.5
-    //bool isAGoodBoy = true;
-    public static void Tomiwa() //method
-    {
-        string name = "Tomiwa";
-        int age = 13;
-        Double averageAge = 6.5;
-        bool isAGoodBoy = true;
-
-        Console.WriteLine("Name: " + name); // Name: Tomiwa
-        Console.WriteLine("Age: " + age); // Age: 13
-        Console.WriteLine("AverageAge: " + averageAge); //AverageAge: 6.5
-        Console.WriteLine("Is He A Good Boy: " + isAGoodBoy); // Is He A Good Boy: true
-    }
-
-    //Class
-    //A class is like a blue print, it defines what an object can have(fields) and do(methods)
-    //Classes contains fields , methods and properties
-    class Players
-    {
-        //Fields
-        public string name;
-        public string month;
-        public int age;
-
-        //Method
-        public void introducePlayer()
-        {
-            Console.WriteLine("The player name is " + name + " and he is " + age + " years old " + " born in the month of " + month);
-        }
+        // Increment and Decrement
+        int num = 5;
+        num++; //post-increment-> num = 6
+        num--; // post-decrement -> num = 4
+        ++num; // pre- increment -> num = 6(increament before use)
+        --num; // pre-decrement -> num = 5
 
     }
+
 }
