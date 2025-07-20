@@ -8,14 +8,14 @@ public class Program //class
 
     private static void Main(string[] args) // entry point
     {
-        MultiplicationTable();
-
+        MultiplicationTable();// call a method
+        //create an instance of an object
         multiply multiply = new multiply();
         multiply.MultiplicationTables();
 
     }
 
-    public static void MultiplicationTable()
+    public static void MultiplicationTable()//method
     {
         int d = 5;
         Console.WriteLine(d * 1);
