@@ -1,4 +1,5 @@
 ﻿using System.Net.Security;
+using System.Xml.Serialization;
 
 public class Program //class
 {
@@ -7,33 +8,57 @@ public class Program //class
 
     private static void Main(string[] args) // entry point
     {
-        PLAYERS players = new PLAYERS();
-        players.displayinfo();
-        players.levelup();
+        MultiplicationTable();
+
+        multiply multiply = new multiply();
+        multiply.MultiplicationTables();
+
     }
-    //Create a player class with properties for name(string), age(int), and score(int).
-    //Method: Displayinfo() shows the players  name, age, and score.
-    //2nd Method: LevelUp() increases the score by 10 and displays a message.
-   
-    class PLAYERS
+
+    public static void MultiplicationTable()
     {
-        string name = "tomiwa";
-        int age = 13;
-        int score = 91;
-        public void displayinfo()
+        int b = 10;
+        Console.WriteLine(b * 1);
+        Console.WriteLine(b * 2);
+        Console.WriteLine(b * 3);
+        Console.WriteLine(b * 4);
+        Console.WriteLine(b * 5);
+        Console.WriteLine(b * 6);
+        Console.WriteLine(b * 7);
+        Console.WriteLine(b * 8);
+        Console.WriteLine(b * 9);
+        Console.WriteLine(b * 10);
+        Console.WriteLine(b * 11);
+        Console.WriteLine(b * 12);
+    }
+   
+    //creating a new class
+    //multiplication table 10()
+    class multiply
+    {
+        int b = 10;
+
+        public void MultiplicationTables()
         {
-            Console.WriteLine(name);
-            Console.WriteLine(age);
-            Console.WriteLine(score);
+            Console.WriteLine(b * 1);
+            Console.WriteLine(b * 2);
+            Console.WriteLine(b * 3);
+            Console.WriteLine(b * 4);
+            Console.WriteLine(b * 5);
+            Console.WriteLine(b * 6);
+            Console.WriteLine(b * 7);
+            Console.WriteLine(b * 8);
+            Console.WriteLine(b * 9);
+            Console.WriteLine(b * 10);
+            Console.WriteLine(b * 11);
+            Console.WriteLine(b * 12);
 
         }
-        public void levelup()
-        {
-            score += 10;
-            Console.WriteLine("level up score: " + score);
-        }
+
+
     }
 }
+
 
 
 
