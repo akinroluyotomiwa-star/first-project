@@ -17,41 +17,41 @@ public class Program //class
 
     public static void MultiplicationTable()
     {
-        int b = 10;
-        Console.WriteLine(b * 1);
-        Console.WriteLine(b * 2);
-        Console.WriteLine(b * 3);
-        Console.WriteLine(b * 4);
-        Console.WriteLine(b * 5);
-        Console.WriteLine(b * 6);
-        Console.WriteLine(b * 7);
-        Console.WriteLine(b * 8);
-        Console.WriteLine(b * 9);
-        Console.WriteLine(b * 10);
-        Console.WriteLine(b * 11);
-        Console.WriteLine(b * 12);
+        int d = 5;
+        Console.WriteLine(d * 1);
+        Console.WriteLine(d * 2);
+        Console.WriteLine(d * 3);
+        Console.WriteLine(d * 4);
+        Console.WriteLine(d * 5);
+        Console.WriteLine(d * 6);
+        Console.WriteLine(d * 7);
+        Console.WriteLine(d * 8);
+        Console.WriteLine(d * 9);
+        Console.WriteLine(d * 10);
+        Console.WriteLine(d * 11);
+        Console.WriteLine(d * 12);
     }
    
     //creating a new class
     //multiplication table 10()
     class multiply
     {
-        int b = 10;
+        int d = 5;
 
         public void MultiplicationTables()
         {
-            Console.WriteLine(b * 1);
-            Console.WriteLine(b * 2);
-            Console.WriteLine(b * 3);
-            Console.WriteLine(b * 4);
-            Console.WriteLine(b * 5);
-            Console.WriteLine(b * 6);
-            Console.WriteLine(b * 7);
-            Console.WriteLine(b * 8);
-            Console.WriteLine(b * 9);
-            Console.WriteLine(b * 10);
-            Console.WriteLine(b * 11);
-            Console.WriteLine(b * 12);
+            Console.WriteLine(d * 1);
+            Console.WriteLine(d * 2);
+            Console.WriteLine(d * 3);
+            Console.WriteLine(d * 4);
+            Console.WriteLine(d * 5);
+            Console.WriteLine(d * 6);
+            Console.WriteLine(d * 7);
+            Console.WriteLine(d * 8);
+            Console.WriteLine(d * 9);
+            Console.WriteLine(d * 10);
+            Console.WriteLine(d * 11);
+            Console.WriteLine(d * 12);
 
         }
 
