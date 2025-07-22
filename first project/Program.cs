@@ -5,35 +5,66 @@ public class Program //class
     //Introduction to c#
     //Operators are symbols or keywords that tells a compiler to perform a specific operation on variables , values or object
 
-    private static void Main(string[] args) // entry point
+    public class StudentReportCard
     {
-        PLAYERS players = new PLAYERS();
-        players.displayinfo();
-        players.levelup();
-    }
-    //Create a player class with properties for name(string), age(int), and score(int).
-    //Method: Displayinfo() shows the players  name, age, and score.
-    //2nd Method: LevelUp() increases the score by 10 and displays a message.
-   
-    class PLAYERS
-    {
-        string name = "tomiwa";
-        int age = 13;
-        int score = 91;
-        public void displayinfo()
-        {
-            Console.WriteLine(name);
-            Console.WriteLine(age);
-            Console.WriteLine(score);
+        public string Name { get; set; }
+        public string Subject { get; set; }
+        public int Score { get; set; }
+        public string Grade { get; set; }
 
-        }
-        public void levelup()
+        public void DisplayPreviousInfo()
         {
-            score += 10;
-            Console.WriteLine("level up score: " + score);
+            Console.WriteLine($"Name: {Name}");
+            Console.WriteLine($"Subject: {Subject}");
+            Console.WriteLine($"Score: {Score}");
+            Console.WriteLine($"Grade: {Grade}");
+        }
+
+        public void DisplayCurrentScore()
+        {
+            Score += 40;
+            Console.WriteLine($"Current Score in {Subject}: {Score}");
+            // You may want to update the grade based on the new score
+            UpdateGrade();
+            Console.WriteLine($"Updated Grade: {Grade}");
+        }
+
+        private void UpdateGrade()
+        {
+            if (Score >= 80) Grade = "A";
+            else if (Score >= 70) Grade = "B";
+            else if (Score >= 60) Grade = "C";
+            else if (Score >= 50) Grade = "D";
+            else Grade = "F";
         }
     }
-}
+
+    class program //class
+    {
+        static void Main(string[] args)
+        {
+            StudentReportCard student = new StudentReportCard();
+            student.Name = "John Doe";
+            student.Subject = "Mathematics";
+            student.Score = 45;
+            student.Grade = "D";
+
+            Console.WriteLine("Previous Information:");
+            student.DisplayPreviousInfo();
+
+            Console.WriteLine("\nCurrent Score:");
+            student.DisplayCurrentScore();
+        }
+    }
+    
+        
+        
+     
+    }
+    
+        
+    
+
 
 
 
