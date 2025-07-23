@@ -1,6 +1,6 @@
 ﻿using System;
 using System.ComponentModel.Design;
-
+Console.WriteLine('enter choice pen colour');
 internal class Program
 {
     private static void Main(string[] args)
