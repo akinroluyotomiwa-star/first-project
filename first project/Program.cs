@@ -1,75 +1,48 @@
-﻿using System.Net.Security;
+﻿using System;
+using System.ComponentModel.Design;
 
-public class Program //class
+internal class Program
 {
-    //Introduction to c#
-    //Operators are symbols or keywords that tells a compiler to perform a specific operation on variables , values or object
-
-    public class StudentReportCard
+    private static void Main(string[] args)
     {
-        public string Name { get; set; }
-        public string Subject { get; set; }
-        public int Score { get; set; }
-        public string Grade { get; set; }
-
-        public void DisplayPreviousInfo()
+        string pen = "black";
+        if (pen == "BLUE")
         {
-            Console.WriteLine($"Name: {Name}");
-            Console.WriteLine($"Subject: {Subject}");
-            Console.WriteLine($"Score: {Score}");
-            Console.WriteLine($"Grade: {Grade}");
+            Console.WriteLine("do not buy");
+        }
+        else if (pen == "red")
+
+        {
+            Console.WriteLine("do not buy");
+
+        }
+        else if (pen == "black")
+        {
+            Console.WriteLine("buy the pen");
+
+
+        }
+        else
+        {
+            Console.WriteLine("pen colour not known");
+
         }
 
-        public void DisplayCurrentScore()
+        switch(pen)
         {
-            Score += 40;
-            Console.WriteLine($"Current Score in {Subject}: {Score}");
-            // You may want to update the grade based on the new score
-            UpdateGrade();
-            Console.WriteLine($"Updated Grade: {Grade}");
-        }
-
-        private void UpdateGrade()
-        {
-            if (Score >= 80) Grade = "A";
-            else if (Score >= 70) Grade = "B";
-            else if (Score >= 60) Grade = "C";
-            else if (Score >= 50) Grade = "D";
-            else Grade = "F";
-        }
-    }
-
-    class program //class
-    {
-        static void Main(string[] args)
-        {
-            StudentReportCard student = new StudentReportCard();
-            student.Name = "John Doe";
-            student.Subject = "Mathematics";
-            student.Score = 45;
-            student.Grade = "D";
-
-            Console.WriteLine("Previous Information:");
-            student.DisplayPreviousInfo();
-
-            Console.WriteLine("\nCurrent Score:");
-            student.DisplayCurrentScore();
+            case "Blue":
+                Console.WriteLine("do not buy");
+                break;
+            case "Green":
+                Console.WriteLine("do not buy");
+                break;
+            case "Black":
+                Console.WriteLine("buy the pen");
+                break;
+            default:
+                Console.WriteLine("Pen color not known");
+                break;
         }
     }
-    
-        
-        
-     
-    }
-    
-        
-    
-
-
-
-
-
-
-
-
-
+}
+       
