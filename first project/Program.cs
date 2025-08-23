@@ -1,90 +1,48 @@
-﻿using System.Diagnostics;
-
-Here are the C# programs for the first assignment using both if-else if and switch statements:
-
-*If-Else If Statement;
-using System
-
-class MealSelector
+﻿using System;
+using System.ComponentModel.Design;
+Console.WriteLine('enter choice pen colour');
+internal class Program
 {
-    static void Main(string[] args)
+    private static void Main(string[] args)
     {
-        Console.WriteLine("Available menu:");
-        Console.WriteLine("1. Rice and Chicken");
-        Console.WriteLine("2. Spaghetti");
-        Console.WriteLine("3. Pizza");
-        Console.WriteLine("4. Salad");
+        string pen = "black";
+        if (pen == "BLUE")
+        {
+            Console.WriteLine("do not buy");
+        }
+        else if (pen == "red")
 
-        Console.Write("Enter the name of a meal: ");
-        string meal = Console.ReadLine();
+        {
+            Console.WriteLine("do not buy");
 
-        if (meal == "Rice and Chicken")
-        {
-            Console.WriteLine("You selected Rice and Chicken.");
         }
-        else if (meal == "Spaghetti")
+        else if (pen == "black")
         {
-            Console.WriteLine("You selected Spaghetti.");
-        }
-        else if (meal == "Pizza")
-        {
-            Console.WriteLine("You selected Pizza.");
-        }
-        else if (meal == "Salad")
-        {
-            Console.WriteLine("You selected Salad.");
-        }
-        else if (meal == "none")
-        {
-            Console.WriteLine("Thank you, goodbye!");
+            Console.WriteLine("buy the pen");
+
+
         }
         else
         {
-            Console.WriteLine("Invalid choice.");
+            Console.WriteLine("pen colour not known");
+
         }
-    }
-}
 
-Switch Statement;
-using System
-
-class MealSelector
-{
-    static void Main(string[] args)
-    {
-        Console.WriteLine("Available menu:");
-        Console.WriteLine("1. Rice and Chicken");
-        Console.WriteLine("2. Spaghetti");
-        Console.WriteLine("3. Pizza");
-        Console.WriteLine("4. Salad");
-
-        Console.Write("Enter the name of a meal: ");
-        string meal = Console.ReadLine();
-
-        switch (meal)
+        switch(pen)
         {
-            case "Rice and Chicken":
-                Console.WriteLine("You selected Rice and Chicken.");
+            case "Blue":
+                Console.WriteLine("do not buy");
                 break;
-            case "Spaghetti":
-                Console.WriteLine("You selected Spaghetti.");
+            case "Green":
+                Console.WriteLine("do not buy");
                 break;
-            case "Pizza":
-                Console.WriteLine("You selected Pizza.");
-                break;
-            case "Salad":
-                Console.WriteLine("You selected Salad.");
-                break;
-            case "none":
-                Console.WriteLine("Thank you, goodbye!");
+            case "Black":
+                Console.WriteLine("buy the pen");
                 break;
             default:
-                Console.WriteLine("Invalid choice.");
+                Console.WriteLine("Pen color not known");
                 break;
         }
     }
 }
-
-Both programs will achieve the same result, but the switch statement is often more concise and efficient when dealing with multiple cases.
-
        
