@@ -5,41 +5,61 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        //syntax
-        //for(initialisation; condition; iteration)
-        //{
-        //    //block of code to be executed
-        //}
+        //Arrays
+        //Find highest and lowest score in an array. 
 
-        //for (int i = 5; i <= 10; i++)
-        //{
-        //    Console.WriteLine(i);
-        //}
-        //Create a calculator app that adds two numbers.
-        //Console.WriteLine("Enter num1");
-        //int num1 = Convert.ToInt32(Console.ReadLine());
-        //Console.WriteLine("Enter num2");
-        //int num2 = Convert.ToInt32(Console.ReadLine());
-        //Console.WriteLine("Enter operator(-,+,*,/)");
-        //string operators = Console.ReadLine();
-        //if (operators == "-")
-        //    Console.WriteLine(num1 + num2);
-        //else if (operators == "+")
-        //    Console.WriteLine(num1 + num2);
-        //else if (operators == "*")
-        //    Console.WriteLine(num1 * num2);
-        //else if (operators == "/")
-        //    Console.WriteLine(num1 / num2);
-        //else
-        //    Console.WriteLine("Invalid imput");
+        //declare an array of scores
+        int[] scores = { 10, 20, 30, 46, 76, 43, 87 };
+         int maxScores = scores[0];
+        int minScores = scores[0];
 
-         string name = "John"; 
-        int age = 10;
-        string club = "Chelsea";
-        string FavPlayer = "Vinni";
+        foreach (int score in scores)
+        {
+            if (score > maxScores)
+                maxScores = score;
+            if (score < minScores)
+            minScores = score;
+        }
+        Console.WriteLine($"Highest score : {maxScores} Lowest score: {minScores}");
 
- Console.WriteLine("Hello " + name + age + club + FavPlayer + "this is all about" + name);  //Concatenation        
-Console.WriteLine($"Hello {name} {age} {club} {FavPlayer} this is all about {name}");// Interpolation 
+
+        //List
+        //List<string> names = new List<string>();
+        //names.Add("Alice");
+        //names.Add("Bob");
+        //names.Add("Tomiwa");
+        //names.Remove("Alice");
+
+        ////Console.WriteLine("names:");
+        //foreach (string s in names)
+        //Console.WriteLine(s);
+        //names.Add("Alice");
+        //Console.WriteLine("Add Alice ");
+        //foreach (string s in names)
+        //    Console.WriteLine(s);
+
+        // Class Attempt
+        //Create a program where users can add / remove student names.
+          
+        List<string> student = new List<string>();
+            student.Add("David");
+            student.Add("jamal");
+            student.Add("ire");
+            student.Remove("David");
+
+            Console.WriteLine("student");
+            foreach (string s in student)
+            Console.WriteLine(s);
+            student.Add("David");
+            Console.WriteLine("Add David");
+            foreach (string s in student)
+                Console.WriteLine(s);
+
+
+
+        
+          
+
     }
 }
        
