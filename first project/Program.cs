@@ -1,48 +1,21 @@
 ﻿using System;
 using System.ComponentModel.Design;
-Console.WriteLine('enter choice pen colour');
+using System.Diagnostics;
 internal class Program
 {
     private static void Main(string[] args)
     {
-        string pen = "black";
-        if (pen == "BLUE")
+        //syntax
+        //for(initialisation; condition; iteration)
+        //{
+        //    //block of code to be executed
+        //}
+
+        for (int i = 5; i <= 10; i++)
         {
-            Console.WriteLine("do not buy");
-        }
-        else if (pen == "red")
-
-        {
-            Console.WriteLine("do not buy");
-
-        }
-        else if (pen == "black")
-        {
-            Console.WriteLine("buy the pen");
-
-
-        }
-        else
-        {
-            Console.WriteLine("pen colour not known");
-
+            Console.WriteLine(i);
         }
 
-        switch(pen)
-        {
-            case "Blue":
-                Console.WriteLine("do not buy");
-                break;
-            case "Green":
-                Console.WriteLine("do not buy");
-                break;
-            case "Black":
-                Console.WriteLine("buy the pen");
-                break;
-            default:
-                Console.WriteLine("Pen color not known");
-                break;
-        }
     }
 }
        
